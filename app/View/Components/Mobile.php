@@ -6,16 +6,17 @@ use Illuminate\View\Component;
 
 class Mobile extends Component
 {
-    public $img,$phone;
+    public $img,$phone,$zindex;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($img,$phone="android")
+    public function __construct($img,$phone="android",$zindex="0")
     {
         $this->img=$img;
         $this->phone=$phone;
+        $this->zindex=$zindex;
     }
 
     /**

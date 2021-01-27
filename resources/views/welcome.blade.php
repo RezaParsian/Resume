@@ -10,11 +10,8 @@
 <body>
     <div class="container-fluid">
         <div class="row" style="height: 506px">
-            <x-mobile img="/img/spider.jpg"/>
-            <x-mobile img="/img/spider.jpg" phone="ios" />
-            <x-mobile img="/img/spider.jpg"/>
-            <x-mobile img="/img/spider.jpg" phone="ios" />
-            <x-mobile img="/img/spider.jpg"/>
+            <x-mobile img="/img/sohrab.png" zindex="-7" />
+            <x-mobile img="/img/46934941.jpg" phone="ios" />
         </div>
         <div class="row"><h1>reza</h1></div>
     </div>
