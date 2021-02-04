@@ -10,6 +10,10 @@ Version: 1.0
 /* Template default CSS
 /*----------------------------------------*/
 
+* {
+	transition: all 0.5s;
+}
+
 html, body {
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
@@ -1850,6 +1854,26 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: 100% 100% !important;
 	background-position: bottom !important;
 }
+
 .ios .temp {
-    left: 14px;
+	left: 14px;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
 }
