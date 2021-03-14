@@ -1,17 +1,6 @@
-/* =================================
-------------------------------------
-EndGam - Gaming Magazine Template
-Version: 1.0
-------------------------------------
-====================================*/
-
-/*----------------------------------------*/
-
-/* Template default CSS
-/*----------------------------------------*/
-
 * {
 	transition: all 0.5s;
+    font-size:14pt;
 }
 
 html, body {
@@ -32,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-	font-size: 15px;
+	font-size: 15pt !important;
 	color: #585858;
 	line-height: 1.6;
 	font-weight: 500;
@@ -333,7 +322,7 @@ Header section
 	height: 20px;
 	right: 0;
 	top: 1px;
-	background-image: url("../img/icons/arrow-down.png");
+	background-image: url("/img/icons/arrow-down.png");
 	background-repeat: no-repeat;
 	background-position: right center;
 }
@@ -348,7 +337,7 @@ Header section
 }
 
 .main-menu li a:hover:after {
-	background-image: url("../img/icons/arrow-down-color.png");
+	background-image: url("/img/icons/arrow-down-color.png");
 }
 
 .main-menu li a:hover i {
@@ -366,7 +355,7 @@ Header section
 }
 
 .main-menu li:hover>a:after {
-	background-image: url("../img/icons/arrow-down-color.png");
+	background-image: url("/img/icons/arrow-down-color.png");
 }
 
 .main-menu li .sub-menu {
@@ -717,7 +706,7 @@ Blog Section
 	-webkit-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
-	background-image: url("../img/icons/double-arrow.png");
+	background-image: url("/img/icons/double-arrow.png");
 	background-repeat: no-repeat;
 	background-position: right -120% center;
 	background-size: 11px;
@@ -1713,53 +1702,30 @@ Responsive
 }
 
 /* mine Rp76 */
-
-@font-face {
-	font-family: lotus-bold;
-	src: url(../fonts/Bahij-Lotus-Bold.ttf) format('truetype')
-}
-
-@font-face {
-	font-family: kave;
-	src: url(../fonts/Far_Kaveh.ttf) format('truetype')
-}
-
 @font-face {
 	font-family: SourceSerifPro;
-	src: url(../fonts/SourceSerifPro-SemiBold.ttf) format('truetype')
+	src: url(/fonts/SourceSerifPro-SemiBold.ttf) format('truetype')
 }
 
 @font-face {
-	font-family: calirb;
-	font-weight: bold;
-	src: url(../fonts/CALIBRIB.ttf) format("truetype");
-}
-
-@font-face {
-	font-family: badr;
-	src: url(../fonts/BAHIJBADR.ttf) format("truetype");
-}
-
-@font-face {
-	font-family: badr_bold;
-	font-weight: bold;
-	src: url(../fonts/BAHIJBADRBOLD.ttf) format("truetype");
+	font-family: aviny;
+	src: url(/fonts/aviny.ttf) format("truetype");
 }
 
 body *:not(.fa):not(.fab):not(.fal):not(.far):not(.fas):not([class*=" eicon-"]):not([class^=eicon]):not(.mce-ico) {
-	font-family: "SourceSerifPro", "lotus-bold";
+	font-family: "SourceSerifPro", "aviny";
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "calirb" !important;
+	font-family: "aviny" !important;
 }
 
 .badr {
-	font-family: "badr" !important;
+	font-family: "aviny" !important;
 }
 
 .badr_bold {
-	font-family: "badr_bold" !important;
+	font-family: "aviny" !important;
 }
 
 #logo {
@@ -1815,7 +1781,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .android::before {
 	position: absolute;
-	background-image: url(../img/samsung.png);
+	background-image: url(/img/samsung.png);
 	height: 506px;
 	width: 240px;
 	display: block;
@@ -1829,7 +1795,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ios::before {
 	position: absolute;
-	background-image: url(../img/iphone.png);
+	background-image: url(/img/iphone.png);
 	width: 253px;
 	height: 506px;
 	display: block;
@@ -1865,15 +1831,15 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-.cool-link::after {
+.cool-link::after{
     content: '';
     display: block;
     width: 0;
     height: 2px;
-    background: #000;
+    background: #38c172;
     transition: width .3s;
 }
 
-.cool-link:hover::after {
+.cool-link:hover::after,.nav-item.cool-link.active::after{
     width: 100%;
 }
