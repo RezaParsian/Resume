@@ -14,7 +14,7 @@ const mix = require('laravel-mix');
 mix.styles([
     'resources/css/animate.css',
     'resources/css/bootstrap.min.css',
-    // 'resources/css/bootstrap-rtl.css',
+    'resources/css/bootstrap-rtl.css',
     'resources/css/font-awesome.min.css',
     'resources/css/magnific-popup.css',
     'resources/css/owl.carousel.min.css',

@@ -10,70 +10,56 @@
 </head>
 
 <body>
-    {{-- <nav class="navbar navbar-expand-sm navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <!-- Brand/logo -->
-        <a class="navbar-brand ml2" href="#">
-            <img src="{{ asset('/img/sohrab.png') }}" alt="logo" style="width:40px;" class="rounded">
-        </a>
-<div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav mr-3">
-        <li class="nav-item cool-link">
-            <a class="nav-link" href="#">خانه</a>
-        </li>
-        <li class="nav-item cool-link">
-            <a class="nav-link" href="#">تماس با من</a>
-        </li>
-    </ul>
-</div>
-    </nav> --}}
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>    
-          </ul>
-        </div>  
-      </nav>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Brand/logo -->
+            <a class="navbar-brand ml2" href="#">
+                <img src="{{ asset('/img/logo.png') }}" alt="logo" style="width:40px;" class="rounded">
+            </a>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-3">
+                    <li class="nav-item cool-link">
+                        <a class="nav-link" href="#">خانه</a>
+                    </li>
+                    <li class="nav-item cool-link">
+                        <a class="nav-link" href="#">تماس با من</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    {{-- <div class="container-fluid mt-3">
-        <div class="row px-5" style="height: 506px;direction:ltr">
-            <x-mobile img="/img/sohrab.png" zindex="-7" />
-            <x-mobile img="/img/46934941.jpg" phone="ios" />
-            <div class="col ml-5 px-5 text-dark">
-                <div class="col">
-                    <div class="col mt-5"><h1>Title Here</h1></div>
-                    <div class="col mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam quis numquam ad nisi voluptates fuga, obcaecati alias recusandae corrupti non dolores mollitia voluptate consectetur natus! Eaque, optio quia. Repudiandae.</div>
-                    <div class="col mt-5">
-                        <div class="col mt-2">
-                            <button class="btn col-4 btn-outline-success">Btn 1</button>
-                        </div>
-                        <div class="col mt-2">
-                            <button class="btn col-4 btn-outline-danger">Btn 2</button>
-                        </div>
+        <div class="row mx-auto">
+            <div class="col align-self-center mx-5">
+                <h1>ایران بدن</h1>
+                <p class="ml-5 mt-2">محتوای به‌روز و سامانه قدرتمند برای مدیران و مربیان باشگاه‌های بدنسازی و فیتنس،
+                    مربیان آنلاین،
+                    کلینیک‌های ورزش و تغذیه، و ورزشکاران</p>
+                <div class="col-md mx-auto">
+                    <div class="col-md d-flex justify-content-center my-1">
+                        <button class="btn btn-outline-success col-md-4">Button 1</button>
+                    </div>
+                    <div class="col-md d-flex justify-content-center my-1">
+                        <button class="btn btn-outline-danger col-md-4">Button 2</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="box">
-                <h1>reza</h1>
+            <div class="col d-flex p-0 position-relative">
+                <img src="{{ asset('img/Sohrab_3.png') }}" alt="Sohrab_3" class="img-fluid mx-auto">
             </div>
         </div>
-    </div> --}}
+
+        <div class="row mx-auto">
+            <div class="deb_service_block ">
+                <i class="fa fa-eye"></i>
+                <h4>مدیر و مربی باشگاه</h4>
+                <p>دیگه وقتشه خدماتت رو بصورت آنلاین و مدرن ارائه بدی!</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>
