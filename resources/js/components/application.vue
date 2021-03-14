@@ -1,8 +1,8 @@
 <template>
     <div class="row mx-auto">
-            <div class="col align-self-center mx-5">
+            <div class="col-md align-self-center mx-md-5 order-1 order-lg-0">
                 <h1 class="text-right">{{title}}</h1>
-                <p class="text-right ml-5 mt-2">{{des}}</p>
+                <p class="ml-md-5 mt-2 text-justify">{{des}}</p>
                 <div class="col-md mx-auto">
                     <a :href="link">
                         <div class="col-md d-flex justify-content-center my-1">
@@ -11,7 +11,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col d-flex p-0 position-relative">
+            <div class="col-lg d-flex p-0 position-relative float-left order-0 order-lg-1">
                 <img :src="img" :alt="img" class="img-fluid mx-auto">
             </div>
         </div>

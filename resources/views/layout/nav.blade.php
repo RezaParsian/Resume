@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light">
+<nav class="navbar navbar-expand-sm navbar-light mb-4">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,10 +8,10 @@
     </a>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav mr-3">
-            <li class="mx-2 nav-item cool-link active">
+            <li class="mx-2 nav-item cool-link active text-center">
                 <a class="nav-link" href="#">خانه</a>
             </li>
-            <li class="mx-2 nav-item cool-link">
+            <li class="mx-2 nav-item cool-link text-center">
                 <a class="nav-link" href="#">تماس با من</a>
             </li>
         </ul>

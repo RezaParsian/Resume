@@ -37380,24 +37380,35 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row mx-auto" }, [
-    _c("div", { staticClass: "col align-self-center mx-5" }, [
-      _c("h1", { staticClass: "text-right" }, [_vm._v(_vm._s(_vm.title))]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-right ml-5 mt-2" }, [
-        _vm._v(_vm._s(_vm.des))
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md mx-auto" }, [
-        _c("a", { attrs: { href: _vm.link } }, [_vm._m(0)])
-      ])
-    ]),
+    _c(
+      "div",
+      { staticClass: "col-md align-self-center mx-md-5 order-1 order-lg-0" },
+      [
+        _c("h1", { staticClass: "text-right" }, [_vm._v(_vm._s(_vm.title))]),
+        _vm._v(" "),
+        _c("p", { staticClass: "ml-md-5 mt-2 text-justify" }, [
+          _vm._v(_vm._s(_vm.des))
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md mx-auto" }, [
+          _c("a", { attrs: { href: _vm.link } }, [_vm._m(0)])
+        ])
+      ]
+    ),
     _vm._v(" "),
-    _c("div", { staticClass: "col d-flex p-0 position-relative" }, [
-      _c("img", {
-        staticClass: "img-fluid mx-auto",
-        attrs: { src: _vm.img, alt: _vm.img }
-      })
-    ])
+    _c(
+      "div",
+      {
+        staticClass:
+          "col-lg d-flex p-0 position-relative float-left order-0 order-lg-1"
+      },
+      [
+        _c("img", {
+          staticClass: "img-fluid mx-auto",
+          attrs: { src: _vm.img, alt: _vm.img }
+        })
+      ]
+    )
   ])
 }
 var staticRenderFns = [
