@@ -1,5 +1,5 @@
 <template>
-    <div class="row mx-auto">
+    <div class="row mx-auto mt-5 mt-lg-0">
             <div class="col-md align-self-center mx-md-5 order-1 order-lg-0">
                 <h1 class="text-right">{{title}}</h1>
                 <p class="ml-md-5 mt-2 text-justify">{{des}}</p>

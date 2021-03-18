@@ -37379,7 +37379,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row mx-auto" }, [
+  return _c("div", { staticClass: "row mx-auto mt-5 mt-lg-0" }, [
     _c(
       "div",
       { staticClass: "col-md align-self-center mx-md-5 order-1 order-lg-0" },
