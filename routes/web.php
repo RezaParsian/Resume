@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Blog\BlogController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PortfolioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes(["register"=>false,"reset"=>false]);
+Auth::routes(["register" => false, "reset" => false]);
 
-Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::view("/","welcome")->name("main");
+Route::prefix("dashboard")->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::resource("portfolio", PortfolioController::class);
+});
+
+
+Route::prefix("/")->group(function () {
+    Route::get("/", [BlogController::class, "index"])->name("blog.index");
+    Route::get("/portfolio/{slug}", [BlogController::class, "show"])->name("blog.show");
+});

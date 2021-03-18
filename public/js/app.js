@@ -37379,16 +37379,21 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row mx-auto mt-5 mt-lg-0" }, [
+  return _c("div", { staticClass: "row mx-auto my-5" }, [
     _c(
       "div",
       { staticClass: "col-md align-self-center mx-md-5 order-1 order-lg-0" },
       [
         _c("h1", { staticClass: "text-right" }, [_vm._v(_vm._s(_vm.title))]),
         _vm._v(" "),
-        _c("p", { staticClass: "ml-md-5 mt-2 text-justify" }, [
-          _vm._v(_vm._s(_vm.des))
-        ]),
+        _c(
+          "p",
+          {
+            staticClass: "ml-md-5 mt-2 text-justify",
+            staticStyle: { "white-space": "break-spaces" }
+          },
+          [_vm._v(_vm._s(_vm.des))]
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "col-md mx-auto" }, [
           _c("a", { attrs: { href: _vm.link } }, [_vm._m(0)])

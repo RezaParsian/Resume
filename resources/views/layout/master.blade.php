@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="اندرویدنویسان">
     <meta name="description" content="اندرویدنویسان">
-    <meta name="keywords" content="برنامه نویسی,رضا پارسیان,سهراب فلاح زاده,سورس,کیبورد ازاد,api,برنامه ازاد,open sorce,خون قلم,سیشارپ,php,C#,جاوا اسکریپت,افزونه,MQL,فارکس,forex,sql,دیتابیس,داده کاوی">
+    <meta name="keywords"
+          content="برنامه نویسی,رضا پارسیان,سهراب فلاح زاده,سورس,کیبورد ازاد,api,برنامه ازاد,open sorce,خون قلم,سیشارپ,php,C#,جاوا اسکریپت,افزونه,MQL,فارکس,forex,sql,دیتابیس,داده کاوی">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <meta name="author" content="رضا پارسیان و سهراب فلاح زاده">
@@ -27,12 +28,13 @@
 </head>
 
 <body>
-    <div class="container" id="app">
-        @include('layout.nav')
+<div class="container" id="app">
+    @include('layout.nav')
 
-        @yield('content')
-    </div>
+    @yield('content')
+</div>
 
-    <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+@yield("ex-js")
 </body>
 </html>
