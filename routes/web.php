@@ -3,6 +3,7 @@
 use App\Http\Controllers\Blog\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortfolioController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
