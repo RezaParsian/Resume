@@ -24,7 +24,7 @@
 
                     <div class="form-group">
                         <label for="title">توضیحات : </label>
-                        <textarea name="description" class="form-control" required></textarea>
+                        <textarea name="description" class="form-control" required placeholder="توضیحات"></textarea>
                     </div>
 
                     <div class="form-group">
@@ -81,7 +81,7 @@
 @section("ex-js")
     <script>
         $(document).ready(function () {
-            // alert("salam")
+            noLink();
         });
 
         function makeProperty() {

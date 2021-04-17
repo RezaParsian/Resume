@@ -24,7 +24,7 @@
     <link rel="shortcut icon" href="{{asset("favicon.ico")}}">
 
     <title>{{ env('APP_NAME') }} @yield('ex-title')</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css?id='.filemtime('css/app.css')) }}">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
     @yield('content')
 </div>
 
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/app.js?id='.filemtime('js/app.js')) }}"></script>
 @yield("ex-js")
 </body>
 </html>

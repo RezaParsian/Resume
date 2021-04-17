@@ -5,6 +5,8 @@
  */
 
 require('./bootstrap');
+window.swal=require("sweetalert2");
+require('./custom');
 
 window.Vue = require('vue').default;
 
