@@ -34,7 +34,7 @@
     @yield('content')
 </div>
 
-<script src="{{ asset('js/app.js?id='.filemtime('js/app.js')) }}"></script>
+<script type="application/javascript" src="{{ asset('js/app.js?id='.filemtime('js/app.js')) }}"></script>
 @yield("ex-js")
 </body>
 </html>

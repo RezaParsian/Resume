@@ -81,7 +81,7 @@
 @section("ex-js")
     <script>
         $(document).ready(function () {
-            noLink();
+
         });
 
         function makeProperty() {

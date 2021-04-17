@@ -1897,10 +1897,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-window.swal = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
-
 __webpack_require__(/*! ./custom */ "./resources/js/custom.js");
 
+window.swal = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js").default;
 /**
  * The following block of code may be used to automatically register your
@@ -1975,18 +1974,25 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
   \********************************/
 /***/ (() => {
 
-noLink = function noLink() {
-  swal.fire({
-    toast: true,
-    icon: 'info',
-    title: 'لینک موردنظر در دسترس نمی‌باشد.',
-    animation: true,
-    position: 'top-right',
-    showConfirmButton: false,
-    timer: 3000,
-    timerProgressBar: true
+$(document).click(function () {
+  $("a").on("click", function () {
+    if ($(this).attr("href") == "#") {
+      swal.fire({
+        toast: true,
+        icon: 'info',
+        title: '<label class="text-white">لینک موردنظر در دسترس نمی‌باشد.</label>',
+        animation: true,
+        background: '#FF4081',
+        position: 'bottom-left',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true
+      });
+      $(".swal2-icon-content").addClass("text-white");
+      $(".swal2-icon").addClass("border-white");
+    }
   });
-};
+});
 
 /***/ }),
 
