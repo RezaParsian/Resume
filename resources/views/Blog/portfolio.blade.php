@@ -24,7 +24,7 @@
             $links=json_decode($portfolio->links);
         @endphp
         <div class="col-lg-8 d-lg-flex mx-auto">
-            <a class="mx-2 d-block my-1" href="{{$links[0]}}" target="_blank">
+            <a class="mx-2 d-block my-1" href="{{$links[0]}}">
                 <img
                     class="img-fluid col"
                     src="{{asset("img/bazaar.png")}}"
@@ -33,7 +33,7 @@
                 >
             </a>
 
-            <a class="mx-2 d-block my-1" href="{{$links[1]}}" target="_blank">
+            <a class="mx-2 d-block my-1" href="{{$links[1]}}">
                 <img
                     class="img-fluid col"
                     src="{{asset("img/google-play-badge.png")}}"
@@ -41,7 +41,7 @@
                     alt="دانلود از گوگل‌پلی"
                 >
             </a>
-            <a class="mx-2 d-block my-1" href="{{$links[2]}}" target="_blank">
+            <a class="mx-2 d-block my-1" href="{{$links[2]}}">
                 <img
                     class="img-fluid col"
                     src="{{asset("img/direct.png")}}"
@@ -49,7 +49,7 @@
                     alt="دانلود مستقیم"
                 >
             </a>
-            <a class="mx-2 d-block my-1" href="{{$links[3]}}" target="_blank">
+            <a class="mx-2 d-block my-1" href="{{$links[3]}}">
                 <img
                     class="img-fluid col"
                     src="{{asset("img/appstore.png")}}"

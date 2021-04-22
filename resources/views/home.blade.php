@@ -41,11 +41,11 @@
                         <div class="row">
                             <div class="col">
                                 <label for="title">لینک بازار : </label>
-                                <input dir="ltr" type="url" class="form-control" name="links[]" required>
+                                <input dir="ltr" type="text" placeholder="https://..." class="form-control" name="links[]" required>
                             </div>
                             <div class="col">
                                 <label for="title">لینک گوگل : </label>
-                                <input dir="ltr" type="url" class="form-control" name="links[]" required>
+                                <input dir="ltr" type="text" placeholder="https://..." class="form-control" name="links[]" required>
                             </div>
                         </div>
                     </div>
@@ -54,11 +54,11 @@
                         <div class="row">
                             <div class="col">
                                 <label for="title">لینک مستقیم : </label>
-                                <input dir="ltr" type="url" class="form-control" name="links[]" required>
+                                <input dir="ltr" type="text" placeholder="https://..." class="form-control" name="links[]" required>
                             </div>
                             <div class="col">
                                 <label for="title">لینک اپل : </label>
-                                <input dir="ltr" type="url" class="form-control" name="links[]" required>
+                                <input dir="ltr" type="text" placeholder="https://..." class="form-control" name="links[]" required>
                             </div>
                         </div>
                     </div>
@@ -80,10 +80,6 @@
 
 @section("ex-js")
     <script>
-        $(document).ready(function () {
-
-        });
-
         function makeProperty() {
             var element=$("#rp76");
             $(element).html($(element).html()+$("#template").html());

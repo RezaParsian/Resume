@@ -1,6 +1,7 @@
 $(document).click(function (){
     $("a").on("click",function () {
-        if ($(this).attr("href") == "#"){
+        const href=$(this).attr("href");
+        if (href.includes("#")){
             swal.fire({
                 toast: true,
                 icon: 'info',

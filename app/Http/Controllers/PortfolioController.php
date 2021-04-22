@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use const http\Client\Curl\AUTH_ANY;
@@ -13,7 +15,7 @@ class PortfolioController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
@@ -23,7 +25,7 @@ class PortfolioController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function create()
     {
@@ -33,16 +35,16 @@ class PortfolioController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return RedirectResponse
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
-        $imageName = time() . Auth::user()->name . "." . $request->image->getClientOriginalExtension();
-        $request->image->move(public_path('img/upload/'), $imageName);
+        $imageName = time() . Auth::user()->name . "." . $request->file("image")->getClientOriginalExtension();
+        $request->file("image")->move(public_path('img/upload/'), $imageName);
 
-        $imageNamej = Auth::id().time() . Auth::user()->name . "." . $request->imagej->getClientOriginalExtension();
-        $request->imagej->move(public_path('img/upload/'), $imageNamej);
+        $imageNamej = Auth::id().time() . Auth::user()->name . "." . $request->file("imagej")->getClientOriginalExtension();
+        $request->file("imagej")->move(public_path('img/upload/'), $imageNamej);
 
         Portfolio::create([
             "user_id"=>Auth::id(),
@@ -62,7 +64,7 @@ class PortfolioController extends Controller
      * Display the specified resource.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function show($id)
     {
@@ -73,7 +75,7 @@ class PortfolioController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function edit($id)
     {
@@ -85,7 +87,7 @@ class PortfolioController extends Controller
      *
      * @param \Illuminate\Http\Request $request
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function update(Request $request, $id)
     {
@@ -96,7 +98,7 @@ class PortfolioController extends Controller
      * Remove the specified resource from storage.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function destroy($id)
     {
