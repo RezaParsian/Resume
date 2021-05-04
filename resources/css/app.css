@@ -1845,3 +1845,42 @@ h1, h2, h3, h4, h5, h6 {
 .cool-link:hover::after,.nav-item.cool-link.active::after{
     width: 100%;
 }
+@media only screen and (max-width: 600px) {
+    #worksamples::after, #worksamples::before {
+        content: '';
+        background: #38c172;
+        width: 5rem;
+        display: inline-block;
+        height: 2px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    #worksamples::after, #worksamples::before {
+        content: '';
+        background: #38c172;
+        width: 5rem;
+        display: inline-block;
+        height: 2px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #worksamples::after, #worksamples::before {
+        content: '';
+        background: #38c172;
+        width: 13rem;
+        display: inline-block;
+        height: 2px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #worksamples::after, #worksamples::before {
+        content: '';
+        background: #38c172;
+        width: 26rem;
+        display: inline-block;
+        height: 2px;
+    }
+}
